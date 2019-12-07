@@ -1,0 +1,356 @@
+	*
+	{
+		margin:0px;
+		padding:0px;
+	}
+	
+	body
+	{
+		background-image:url('images/tlo_strony.jpg');
+	background-attachment:fixed; /*niech tło stoi w miejscu*/
+	}
+	
+	a
+	{
+		text-decoration:none;
+	}
+	
+	a:hover
+	{
+		color:teal;
+	}
+	
+	
+	div#kontener
+	{
+		width: 1004px; /*zawsze ustawiamy na tyle. Większość przeglądarek ma rozdzielczość 1024, 20px zostawiamy na scroll*/
+		margin: 0 auto; /*aby trzymać wyśrodkowanie*/
+	}
+	/*GÓRNA CZĘŚĆ KONTENERA*/
+	div#gorna_czesc_kontenera
+	{
+		position:relative;
+		margin-top: 10px;
+		background-image: url('images/gora_i_dol.jpg');
+		width: 944px;
+		height: 113px; /*dopasowuję do wielkości obrazka*/
+	}
+	img.logo
+	{
+		position:absolute;
+		border: 0px;
+		left:45px;
+		top:15px;
+	}
+	
+	#kontakt_box
+	{
+		position:absolute;
+		right: 30px;
+		top: 5px;
+		font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+		font-size: 11px;
+		line-height: 125%;
+	}
+	#kontakt_box a
+	{
+		border-bottom:none;
+	}
+	
+	/*MENU GÓRNE*/
+	#gorne_menu
+	{
+		position:absolute;
+		left:50px;
+		bottom:-5px;
+		border:2px solid black;
+	}
+	#wlasciwe_gorne_menu li
+	{
+		list-style-type:none;
+		float:left;
+	}
+	#wlasciwe_gorne_menu li a
+	{
+		background-image:url('images/menu_gorne.jpg');
+		height:31px; /*wysokość obrazka*/
+		display:inline-block; /*blok w linii*/
+		float:left; /*na wszelki wypadek zgodnie z linkami*/
+		border-bottom:none;
+		padding: 0px 10px;
+		font-family: "tempus sans itc", Verdana, Geneva, Arial, Helvetica, sans-serif;
+		font-size: 15px;
+		font-weight: bold;
+		color:black;
+		/*padding-top:10px;*/
+	}
+	#wlasciwe_gorne_menu li a:hover, #wlasciwe_gorne_menu li#aktualny a
+	{
+		background-image:url('images/menu_gorne_hover.gif');
+	}
+	span.linki
+	{
+		display:inline-block;
+		margin-top:8px; /*Całą ta akcja ze span linki to na wypadek, gdyby nie zadziałał mi padding w wlasciwe gorne menu. Padding to wypełnienie obrazem i wygląda u mnie ok, bo mam tylko jednokolorowy pasek, ale już gdyby był gradient to byłoby widoczne powtarzanie obrazka*/
+	}
+	
+	/*ŚRODKOWE MENU*/
+	#srodkowe_menu
+	{
+		background-image:url('images/srodkowe_menu.gif');
+		width:944px;
+		height:32px;
+		border-bottom: 1px solid gray;
+	}
+	#srodkowe_menu li
+	{
+		list-style-type:none;
+		float:left;	
+	}
+	#srodkowe_menu li a
+	{
+		border-bottom:none;
+		font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+		font-size: 12px;
+		font-weight:bold;
+		color:black;
+	}
+	#srodkowe_menu li a:hover
+	{
+		color:white;
+	}
+	#srodkowe_menu li span.linki2
+	{
+		display:block;
+		margin-top:7px;
+		
+	}
+	#srodkowe_menu #gorny_poziom
+	{
+		margin-left: 50px;
+	}
+	#srodkowe_menu span.odstep
+	{
+		display:inline-block;
+		margin: 3px 10px 0px 10px;
+		color:black;
+	}
+	
+	/*MENU ROZWIJANE*/
+	#gorny_poziom li .drugi_poziom
+	{
+		display:none;
+	}
+	#gorny_poziom li:hover .drugi_poziom
+	{
+		display:block;
+		width: 210px;
+	}
+	#gorny_poziom li .drugi_poziom li
+	{
+		width: 170px;
+		text-align: left;
+	}
+	#gorny_poziom li
+	{
+		position:relative;
+	}
+	#gorny_poziom li .drugi_poziom
+	{
+		position:absolute;
+		top: 1.9em;
+		left: 0em;
+	}
+	#gorny_poziom > li /*znak większości oznacza że wszystko przed li ma miec taką wysokośc, same elementy li już nie*/
+	{
+		height: 50px;
+	}
+	#gorny_poziom li .drugi_poziom
+	{
+		background-color:#e798d4;
+		border-left: 1px solid gray;
+		border-bottom: 1px solid gray;
+		border-right: 1px solid gray;
+		opacity: 0.9;
+		filter: alpha(opacity=90);
+	}
+	#gorny_poziom li .drugi_poziom li
+	{
+		margin-left: 20px;
+		border-bottom: 1px solid gray;
+	}
+	#gorny_poziom li .drugi_poziom li a
+	{
+		display: block;
+		width: 170px;
+		padding-top: 3px;
+		padding-bottom: 3px;
+	}
+	#gorny_poziom li .drugi_poziom li a:hover
+	{
+		background-color:#c3c3c3;
+		padding-left:20px;
+		margin-left:-20px;
+		padding-right:20px;
+		margin-top:-1px;
+		border-top:1px solid gray;
+		border-bottom:1px solid gray;
+	}
+	#gorny_poziom li .drugi_poziom li a
+	{
+		font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+		font-size: 10px;
+	}
+	#gorny_poziom li .drugi_poziom li .pierwszy_element_menu
+	{
+		margin-top:5px;
+	}
+	/*GŁÓWNA ZAWARTOŚĆ STRONY*/
+	#zawartosc
+	{
+		width: 944px;
+	}
+	#gorna_czesc_zawartosci
+	{
+		background-image:url('images/gorna_czesc_zawartosci.gif');
+		width:944px;
+		height:17px;
+	}
+	#srodkowa_czesc_zawartosci
+	{
+		background-image: url('images/srodkowa_czesc_zawartosci.gif');
+		width:944px;
+		repeat:repeat-y;
+	}
+	#dolna_czesc_zawartosci
+	{
+		background-image:url('images/dolna_czesc_zawartosci.gif');
+		width:944px;
+		height:31px;
+	}
+	#tekst
+	{
+		text-align:justify;
+		padding: 10px 50px;
+		line-height:140%;
+		font-family:Verdana, Geneva, Arial, Helvetica, sans-serif;
+		font-size:12px;
+	}
+	h1
+	{
+		font-size:16px;
+		text-align:center;
+		padding-bottom: 20px;
+		padding-top: 20px;
+	}
+	h3
+	{
+		font-size: 14px;
+		font-style: italic;
+	}
+	p
+	{
+		margin-bottom:15px;
+	}
+	#tekst ul
+	{
+		margin: 10px 20px 20px 70px;
+		list-style-type:square;
+		
+	}
+	#tekst a
+	{
+		color:black;
+	}
+	#zawartosc #boczny_tekst
+	{
+		text-align:left;
+		float:right;
+		width:150px;
+		margin:20px;
+		font-family:Verdana, Geneva, Arial, Helvetica, sans-serif;
+		font-size:10px;
+		padding: 20px 15px;
+		border:1px dashed gray;
+		background-image:url('images/tlo_boczny_tekst.gif');	
+	}
+	#zawartosc .obrazki
+	{
+		float:right;
+		clear:right;
+	}
+	#zawartosc .obrazki img
+	{
+		float:right;
+		clear:right;
+		margin: 20px;
+		padding:0px 15px;
+		cursor:pointer;
+		opacity:0.6;
+	}
+	/*DOLNA CZESC STRONY*/
+	#dolna_czesc_strony
+	{
+		background-image:url('images/gora_i_dol2.jpg');
+		width:944px;
+		height:113px;
+		margin-bottom:10px;
+	}
+	#newsletter_icon
+	{
+		float:left;
+		margin-left:20px;
+	}
+	#tekst_newsletter
+	{
+		color:black;
+		text-align:left;
+		padding-top:15px;
+	}
+	#naglowek_newsletter
+	{
+		font-size:14px;
+		font-family:"Arial Narrow" cursive sans-serif;
+		font-weight:bold;			
+	}
+	#form_newsletter
+	{
+		margin-top:10px;
+		font-size:14px;
+	}
+	.input_text
+	{
+		background-color:white;
+		font-size:14px;
+	}
+	.submit_button
+	{
+		padding:5px;
+		font-size: 10px;
+		font-family:Verdana, Geneva, Arial, Helvetica, sans-serif;
+		font-weight:bold;
+		cursor:pointer;
+		border:2px outset black;
+	}
+	.submit_button:hover
+	{
+		color:#B27E9B;
+	}
+	.submit_button:active
+	{
+		border: 2px inset black;
+	}
+	#newsletter_info
+	{
+		font-size:10px;
+		font-family:Verdana, Geneva, Arial, Helvetica, sans-serif;
+		margin-left:20px;
+		margin-top:5px;
+	}
+	#copyright
+	{
+		font-size:10px;
+		font-family:Verdana, Geneva, Arial, Helvetica, sans-serif;
+		margin:10px;
+		text-align:center;
+	}

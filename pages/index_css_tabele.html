@@ -1,0 +1,60 @@
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+ <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl" lang="pl">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="content-language" content="pl" />
+		
+		<meta name="author" content="Justyna Lemańska" />
+		<meta name="robots" content="index, follow" />
+			<title>Kronika, podróże, galeria Jadzi</title>
+		<meta name="description" content="Zdjęcia, zapiski, wspomnienia z pierwszych podróży Jadzi" />
+		<meta name="keywords" content="podróże, dziecko, Jadzia, zdjęcia, kronika" />
+		<!-- <link href="style.css" rel="stylesheet" type="text/css" /> --!> <!-- podłączenie pliku css" link - połącz, rel - w jakiej relacji są pliki, type- jaki jest typ pliku-->
+		<style type="text/css">
+			
+		/*<![CDATA[*/
+		table.test
+		{
+			width:500px; /*można ustawić też w % szerokości strony. np jeśłi na 100% to zawsze jest utrzymywane nawet przy rozciąganiu okna*/
+			height:500px;
+			border: dotted 5px red; /*obramowanie ale całej tabeli, bez obramowania wewnątrz*/
+			border-collapse:collapse; /*bo nie chcemy podwójnego obramnowania - całej tabeli i komórek. collapse z ang "załamanie"*/
+			
+		}
+		
+		table.test td.import /*wybrane osobno komórki tabeli*/
+		{
+			border:dashed 2px green;
+			padding:20px; /*padding - odsunięcie tekstu od ramki*/
+			text-align:center;
+			vertical-align:bottom; 
+			background-color:#800080;
+		}
+		
+		table.test td.export /*wybrane osobno komórki tabeli*/
+		{
+			border:dashed 2px green;
+			padding:20px; /*padding - odsunięcie tekstu od ramki*/
+			text-align:center;
+			vertical-align:bottom; 
+			background-color:blue;
+			background-image:url("images/jadzikson.png");
+			background-repeat:no-repeat;
+		}
+		/*]]>*/
+		</style> 
+	</head>
+
+	<body>
+		<table class="test" cellspacing="0">
+			<tr>
+				<td class="import">1</td> <td class="export">2</td>
+			</tr>
+			<tr>
+				<td class="export">3</td> <td class="import">4</td>
+			</tr>
+		</table>
+	</body>
+	
+</html>

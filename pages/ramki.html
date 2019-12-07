@@ -1,0 +1,26 @@
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<!--doctype zmienić na taki z frameset-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl" lang="pl">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="content-language" content="pl" />
+		
+		<meta name="author" content="Justyna Lemańska" />
+		<meta name="robots" content="index, follow" />
+			<title>Frameset</title>
+		<meta name="description" content="Zdjęcia, zapiski, wspomnienia z pierwszych podróży Jadzi" />
+		<meta name="keywords" content="podróże, dziecko, Jadzia, zdjęcia, kronika" />
+	</head>
+
+	<!--frameset to zbiór ramek
+		cols - kolumny, określamy szerokość
+		Gdy używam frameset to nie używam body-->
+	<frameset cols="20%, *" border="10">
+		<frame src="menu.html" noresize="noresize"/>
+		<frame src="pierwsze-urodziny-jadzi.html"/>
+			
+		<noframes><body>Przeglądarka nie obsługuje ramek</body></noframes> <!--zawsze dać takie coś dla zabezpiczenia-->
+	</frameset>
+	
+</html>
